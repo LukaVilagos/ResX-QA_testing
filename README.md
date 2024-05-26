@@ -26,4 +26,27 @@ After an alert is successfully deleted, upon exiting and reentering the alerts s
 
 ## Tests
 
-The tests were created using the Appium API and PyTest framework. **Previous test results can be found in the reports folder**. To run your own tests add a new file named "test_{...}.py" {...} being the name of the test and write your test function in the file. To run the tests, simply run the ``pytest`` command in the terminal in your root folder. After every test is done the results will be saved in the root of the project under the name "report.html". To save the report move it into the reports folder and change its name, otherwise it will be rewritten.
+The tests were created using the Appium API and PyTest framework. **Previous test results can be found in the reports folder**. To run your own tests add a new file named "test_{...}.py" {...} being the name of the test and write your test function in the file. To run the tests run the following commands:
+
+```python -m venv venv``` - to create a venv environment
+
+```venv\Scripts\activate\``` - to activate the environment (Windows)
+
+Install the necessary packages:
+
+```pip install pytest``` 
+
+```pip install pytest-html```
+
+```pip install Appium-Python-Client```
+
+Run the emulator:
+```emulator {device_name}```
+
+Run the appium server:
+```appium```
+
+Now to run the tests run:
+```pytest```
+
+After every test is done the results will be saved in the root of the project under the name "report.html". To save the report move it into the reports folder and change its name, otherwise it will be rewritten.
