@@ -50,3 +50,27 @@ Now to run the tests run:
 ```pytest```
 
 After every test is done the results will be saved in the root of the project under the name "report.html". To save the report move it into the reports folder and change its name, otherwise it will be rewritten.
+
+### Test add and delete alert
+
+Testing begins by opening the alert submenu. The test finds the Add New Alert button and clicks it if it's enabled. The button opens a new menu where the test selects a specific restaurant. Then the newly added alert is deleted, and the alert submenu is closed.
+
+### Test alerts submenu
+
+The test opens the alerts submenu and checks if the View is changed. The submenu is then closed and the test checks which view is opened.
+
+### Test information submenu
+
+The test opens the information submenu and checks if the View is changed. The submenu is then closed and the test checks which view is opened.
+
+### Test checkbox opens button
+
+The test opens a specific reservation menu. The test checks if the button is enabled. If the button is not enabled the test checks the checkbox which should enable the button. The reservation menu is then closed.
+
+### Test city change
+
+The test checks if the reservations shown change after changing the selected city using the city changer menu. The test first changes the city from new york to miami, checks which reservation is displayed and then changes it back.
+
+### Test day change
+
+The test checks if the reservations shown change after changing the selected day using the Tomorrow and Today buttons. The test first changes the day from today to tomorrow, checks which reservation is displayed and then changes it back.
